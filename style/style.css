@@ -51,6 +51,7 @@
            border: none;
            border-radius: 45px;
            text-transform: capitalize;
+           cursor: pointer;
     }
 
     .btn.extra{
@@ -152,7 +153,64 @@
          font-weight: 400;
          margin: 28px 0;
       }
-      .banner__btn{
-         text-align: center;
+
+
+        .banner__img{
+          position: relative;
+        }
+      .banner__badge{
+          width: 170px;
+          height: auto;
+        padding: 15px ;
+          background-color: gray;
+          position: absolute;
+          right: -9%;
+          top: 22%;
+          border-radius: 10px;
+          text-align: left;
       }
+
+    .banner__badge_extra{
+      width: 170px;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    padding: 15px ;
+      background-color: gray;
+      position: absolute;
+       bottom: 15%;
+      left: 10%;
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    .banner__badge_extra .red__circle{
+       width: 30px;
+       height: 30px;
+       background-color: var(--1stcolor);
+       border-radius: 50%;
+    }
+
+      .banner__badge h4{
+         font-size: 30px;
+      }
+      .banner__badge p{
+        font-size: 14px;
+      }
+
+      .banner__badge * , .banner__badge_extra *{
+          background-color: transparent;
+      }
+
+      /* .banner__badge.extra{
+
+      } */
+
+
+  
+      .banner__badge *{
+        background-color: transparent;
+      }
+ 
     /* *banner ends  */
