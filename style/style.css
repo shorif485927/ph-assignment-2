@@ -20,7 +20,11 @@
          padding: 0;
          box-sizing: border-box;
          font-family: "Inter", sans-serif;
-         background: rgb(0, 0, 0);
+    }
+
+    body{
+      background: rgb(0, 0, 0);
+      color: white;
     }
 
     a{
@@ -43,11 +47,13 @@
     }
 
     .btn{
+       width: 170px;
+       height: auto;
           font-size: 18px;
           font-weight: 600;
           background-color: var(--1stcolor);
           color: var(--2ndcolor);
-           padding: 15px 40px;
+          padding: 18px 5px;
            border: none;
            border-radius: 45px;
            text-transform: capitalize;
@@ -55,12 +61,14 @@
     }
 
     .btn.extra{
+      width: 170px;
+      height: auto;
         font-size: 18px;
         font-weight: 600;
  background-color: transparent;
         color: var(--2ndcolor);
-         padding: 15px 40px;
-         border: 1px solid var(--2ndcolor);
+        padding: 18px 5px;
+        border: 1px solid var(--2ndcolor);
          border-radius: 45px;
          text-transform: capitalize;
          margin-left: 15px;
@@ -68,6 +76,24 @@
 
     #banner .banner__img{
          width: 100%;
+    }
+
+
+    .heading{
+       width: 30%;
+padding: 30px 0;
+text-align: center;
+margin: auto; 
+    }
+
+    .heading h3{
+font-size: 23px;
+text-transform: capitalize;
+margin-bottom: 10px;
+    }
+
+    .heading p{
+
     }
     /* !common code ends */
 
@@ -155,6 +181,10 @@
       }
 
 
+      .banner__img img{
+         width: 100%;
+      }
+
         .banner__img{
           position: relative;
         }
@@ -164,8 +194,8 @@
         padding: 15px ;
           background-color: gray;
           position: absolute;
-          right: -9%;
-          top: 22%;
+          right: -3%;
+          top: 28%;
           border-radius: 10px;
           text-align: left;
       }
@@ -179,8 +209,8 @@
     padding: 15px ;
       background-color: gray;
       position: absolute;
-       bottom: 15%;
-      left: 10%;
+       bottom: 18%;
+      left: -3%;
       border-radius: 10px;
       text-align: left;
     }
@@ -195,6 +225,11 @@
       .banner__badge h4{
          font-size: 30px;
       }
+
+      .banner__img p{
+        color: rgba(255, 255, 255, 0.5);
+
+      }
       .banner__badge p{
         font-size: 14px;
       }
@@ -203,14 +238,231 @@
           background-color: transparent;
       }
 
-      /* .banner__badge.extra{
-
-      } */
-
 
   
-      .banner__badge *{
-        background-color: transparent;
-      }
- 
+    
     /* *banner ends  */
+
+
+    /* *habbit section starts  */
+
+        #habbit{}
+
+        #habbit .habbit__cards{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+
+        #habbit .habbit__card{
+          text-align: center
+        }
+
+        #habbit .habbit__card img{
+          text-align: left;
+            border-radius: 50%;
+        }
+
+
+        #habbit .habbit__card h4{
+          text-transform: capitalize;
+          margin: 15px 0;
+        }
+
+        #habbit .habbit__card p{
+          font-size: 13px;
+        }
+
+        .habbit__card__cnt{
+          width: 80%;
+         
+          margin: auto;
+        }
+
+
+        
+
+
+    /* * habbit section ends  */
+
+
+
+
+
+
+       /* ! RESPONSIVE SECTION (mobail) STARTS  */
+
+         /* * 0 -576 px */
+
+           @media (max-width:576px){
+
+
+            
+    .heading{
+      width: 80%;
+
+   }
+
+   .heading h3{
+font-size: 23px;
+text-transform: capitalize;
+margin-bottom: 10px;
+   }
+
+   .heading p{
+
+   }
+
+
+
+              header nav  .nav__list{
+                 display: none;
+              }
+
+               #banner{
+                 display: block;
+               }  
+               #banner .banner__cnt{
+                 font-size: 50px;
+                 line-height: 70px;
+                font-weight: 700;
+             }
+
+             .banner__btn{
+                display: flex;
+             }
+
+             .btn{
+
+              width: 120px;
+              font-size: 14px;
+              font-weight: 600;
+   
+               padding:15px 0;
+     
+       
+        }
+    
+        .btn.extra{
+          width: 120px;
+          font-size: 14px;
+          font-weight: 600;
+
+           padding:15px 0;
+        }
+
+
+        .banner__badge{
+          width: 150px;
+          height: auto;
+        padding: 15px 10px ;
+
+
+          top: 10%;
+      }
+
+    .banner__badge h4{
+      font-size: 22px;
+    }
+
+    
+    .banner__badge p{
+      font-size: 13px;
+    }
+
+
+
+
+      .banner__badge_extra{
+        width: 150px;
+          height: auto;
+      padding: 15px 10px ;
+
+         bottom: 45%;
+        left: -3%;
+      
+      }
+  
+      /* .banner__badge_extra .red__circle{
+         width: 30px;
+         height: 30px;
+         background-color: var(--1stcolor);
+         border-radius: 50%;
+      } */
+
+      #habbit .habbit__cards{
+        grid-template-columns: repeat(1 , 1fr);
+      }
+
+      .habbit__card__cnt{
+     width: 70%;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+           }
+
+           @media (max-width:450px){
+
+            
+        .banner__badge{
+          width: 120px;
+          height: auto;
+        padding: 12px 8px ;
+
+        right: -7%;
+          top: 10%;
+      }
+
+    .banner__badge h4,.banner__badge_extra h4{
+      font-size: 18px;
+    }
+
+    
+    .banner__badge p,.banner__badge_extra p{
+      font-size: 11px;
+    }
+
+
+
+
+      .banner__badge_extra{
+        width: 120px;
+        height: auto;
+      padding: 12px 8px ;
+
+         bottom: 45%;
+        left: -3%;
+      
+      }
+  
+           }
+
+
+
+           @media (min-width:451px) and (max-width:576px){
+            .banner__badge{
+              width: 150px;
+              height: auto;
+            padding: 15px 10px ;
+    
+              right: -5%;
+              top: 10%;
+          }
+    
+           }
+
+
+       /* ! RESPONSIVE SECTION (mobail)  ENDS  */
+
