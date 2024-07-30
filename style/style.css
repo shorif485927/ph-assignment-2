@@ -31,7 +31,7 @@
         text-decoration: none;
     }
 
-    li,ol{
+    li{
          list-style-type: none;
     }
 
@@ -335,6 +335,88 @@ margin: 10px 0 50px;
 
 
 
+    /* * footer section starts  */
+
+
+      footer{
+        background: rgba(255, 255, 255, 0.1);
+        text-transform: capitalize;
+      }
+
+        footer .container{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+         padding: 50px 0;
+        }
+
+        .footer__logo{
+          width: 33.33%;
+          margin-top: -30px;
+        }
+
+        .footer__logo h1{
+          font-size: 50px;
+          font-style: italic;
+          text-transform: capitalize;
+          color: var(--1stcolor);
+        }
+
+        .footer__logo p{
+          font-size: 14px;
+          text-transform: capitalize;
+          color: var(--3rdcolor);
+          margin: 20px 0;
+          line-height: 22px;
+        }
+
+        footer h4{
+          font-size: 20px;
+           text-transform: capitalize;
+           margin-bottom: 20px;
+        }
+
+        .footer_link_1{
+          width: 33.33%;
+      
+        }
+
+        .footer_link_2{
+
+          width: 33.33%;
+        }
+
+         footer ul , h4{
+          width: 40%;
+        
+          margin: auto;
+         }
+
+           footer ul li{
+            padding-bottom: 15px;
+           }
+
+            footer a{
+              color: var(--3rdcolor);
+            }
+            footer hr{
+              width: 80%;
+              margin: auto;
+              border: 1px solid rgba(255, 255, 255, 0.1);
+            
+            }
+            .copyright{
+              text-align: center;
+              color: var(--3rdcolor);
+              padding: 30px 0;
+              font-size: 20px;
+              letter-spacing: .5px;
+            }
+
+    /* * footer section ends  */
+
+
+
 
 
 
@@ -470,7 +552,6 @@ margin-bottom: 10px;
  
     /* * run section starts */
 
-      /* *run section starts  */
 
       #run{}
 
@@ -507,7 +588,50 @@ margin-bottom: 10px;
 /* *run section ends */
 
 
-    /* * run section ends  */
+ 
+
+      /* *footer section starts  */
+
+      footer .container{
+        display: block;
+          padding: 50px 0;
+         }
+
+         .footer__logo{
+          width: 100%;
+          margin-top: -30px;
+        }
+
+  
+        .footer_link_1,  .footer_link_2{
+          width: 100%
+      
+        }
+ 
+         footer ul , h4{
+          width: 100%;       
+
+         }
+
+           footer ul li{
+            padding-bottom: 15px;
+           }
+
+            footer a{
+              color: var(--3rdcolor);
+            }
+            footer hr{
+              width: 80%;
+              margin: auto;
+              border: 1px solid rgba(255, 255, 255, 0.1);
+            
+            }
+            .copyright{
+          font-size: 15px;
+            }
+       
+       
+      /* *footer section ends  */
 
 
           /* _____________ ________________ */
