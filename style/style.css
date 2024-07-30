@@ -334,6 +334,47 @@ margin: 10px 0 50px;
     /* *run section ends */
 
 
+    /** team section starts  */
+
+      #team{
+        margin: 50px 0 100px 0;
+      } 
+
+      .team__members{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+      }
+
+      .team__members img{
+        width: 100%;
+        height: 272px;
+        border-radius: 18px;
+      }
+      
+      .trainer{
+        position: relative;
+      }
+
+      .trainer__cnt{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+      }
+
+      .trainer__cnt h5{
+         font-size: 20px;
+         text-transform: capitalize;
+      }
+
+      .trainer__cnt p{
+        color: var(--3rdcolor);
+        text-transform: capitalize;
+      }
+    /* * team section ends  */
+
 
     /* * footer section starts  */
 
@@ -588,7 +629,25 @@ margin-bottom: 10px;
 /* *run section ends */
 
 
- 
+  /* * team section starts */
+
+  .team__members{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+   #team h3{
+    margin-bottom: 20px;
+   }
+   #team p {
+    line-height: 24px;
+   }
+
+   .team__members img{
+height: 220px;
+  }
+  /* * team section ends  */
+
+
 
       /* *footer section starts  */
 
