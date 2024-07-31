@@ -96,6 +96,7 @@ margin-bottom: 10px;
     .heading p{
 color: var(--3rdcolor);
 margin: 10px 0 50px;
+line-height: 24px;
     }
     /* !common code ends */
 
@@ -414,6 +415,96 @@ margin: 0;
     /* !   UNIQUE SECTION ENDS  */
 
 
+    /* * bmi calc section starts  */
+
+      #bmi__calc{
+        padding: 50px 0 80px;
+        background: rgba(255, 255, 255, 0.1);
+       
+      }
+
+      .bmi__calc__details{
+        display: grid;
+        grid-template-columns: 40% 60%;
+      
+      }
+      .bmi_chart h3{
+        margin-bottom: 35px;
+        font-size: 24px;
+        font-weight: 900;
+        
+      }
+
+      .bmi__calc__details  table td,th{
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 18px 50px 18px 18px;
+        font-size: 14px;
+      }
+
+      .bmi__calc__details  table {
+        border-collapse: collapse;
+      }
+      .bmi__calc__details th{
+        font-size: 16px;
+        text-align: left;
+      }
+      .bmi__calc__details  table td{
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+    .bmi_form{
+       margin-left: 8%;
+    }
+        
+      .bmi__calc__details h3{
+   font-size: 24px;
+   text-align: left;
+   font-weight: 900;
+   text-transform: capitalize;
+      }
+      .bmi_form .heading{
+        margin: 0;
+        padding: 0;
+      }
+      .bmi_form .heading p{
+        margin: 50px 0;
+      }
+      .bmi_form .input{
+         width: 40%;
+          
+      }
+      .bmi_form .active{
+        width: 82%;
+     } 
+      .bmi_form input, select{
+        border-radius: 8px;
+          border: none;
+background: rgba(255, 255, 255, 0.1);
+padding: 12px 20px ;
+ margin: 0 12px 12px 0;
+ font-size: 16px;
+ text-transform: capitalize;
+ color: rgba(255, 255, 255, 0.6);
+
+      }
+  
+
+      .bmi_form button {
+         width: 35%;
+         padding: 13px 0;
+         font-size: 18px;
+         font-weight: 600;
+         text-transform: capitalize;
+         background-color: var(--1stcolor);
+         color: rgb(255, 255, 255);
+         border-radius: 46px;
+         border: none;
+         margin-top: 20px;
+      }
+
+    /* * bmi calc section ends */
+
+
     /* * footer section starts  */
 
 
@@ -686,7 +777,7 @@ height: 220px;
   /* * team section ends  */
 
 
-  /* * service section starts  */
+  /* ! unique section starts  */
 
   .service__details{
 
@@ -694,8 +785,59 @@ height: 220px;
   
   }
 
-  /* * service section ends  */
+  /* ! unique section ends  */
 
+
+  /* * bmi section starts  */
+
+  .bmi_chart {
+    margin-bottom: 20px;
+  }
+
+  .bmi__calc__details{
+    grid-template-columns: 100% ;
+  
+  }
+
+  .bmi__calc__details  table td,th{
+
+    padding: 15px 10px 15px ;
+  }
+
+     
+  .bmi__calc__details h3{
+    font-size: 20px;
+    margin-top: 15px;
+       }
+.bmi_form{
+   margin-left: 0;
+}
+    
+  .bmi_form h3{
+font-size: 24px;
+text-align: left;
+font-weight: 900;
+  }
+  .bmi_form .heading{
+    margin: 0;
+    padding: 0;
+  }
+  .bmi_form .heading p{
+    margin: 20px 0 50px;
+  }
+  .bmi_form .input{
+     width: 100%;
+      
+  }
+  .bmi_form .active{
+    width: 100%;
+ } 
+
+  .bmi_form button {
+     width: 60%;
+
+  }
+  /* * bmi section ends */
 
 
       /* *footer section starts  */
