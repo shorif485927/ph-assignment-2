@@ -112,16 +112,19 @@ line-height: 24px;
              display: flex;
              justify-content: space-between;
              align-items: center;
-             padding: 60px 0 35px 0;
-    
-             
+             padding: 60px 0 35px 0;         
         }
+
+         .nav__icon{
+          display: none;
+         }
 
          nav .nav__list  ul li{
               display: inline-block;
          }
 
          nav .nav__logo {
+font-size: 25px;
              text-transform: capitalize;
                color: var(--1stcolor);
         font-style: italic;
@@ -612,6 +615,19 @@ margin-bottom: 10px;
    .heading p{
 
    }
+      nav{
+        display: block;
+      }
+            .nav__logo{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            }
+
+                .nav__icon{
+                  display: block;
+                  color: white;
+                }
               header nav  .nav__list{
                  display: none;
               }
